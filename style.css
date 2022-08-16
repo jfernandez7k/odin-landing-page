@@ -1,0 +1,125 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    border: 6px solid red;
+    /* The key for keeping the footer at the end is display: flex with column direction, height: 100vh for extending the container to the end, and using margin-top: auto in the footer for keeping it at the end. */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border: 3px solid blue;
+    background-color: #1F2937;
+}
+
+nav {
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-one {
+    border: 3px solid purple;
+}
+
+.section-two {
+    border: 3px solid yellow;
+}
+
+.call {
+    border: 3px solid orange;
+}
+
+footer {
+    border: 3px solid pink;
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: auto;
+}
+
+h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+header p, button {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+header ul {
+    font-size: 18px;
+    color: #E5E7EB;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header button {
+    background-color: #3882F6;
+    padding: 8px 32px;
+    border-style: none;
+    border-radius: 8px
+}
+
+#logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.section-one h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.section-one p {
+    font-size: 18px;
+    color: #555c69;
+}
+
+.section-two {
+    background-color: #E5E7EB;
+}
+
+.section-two blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.section-two figcaption {
+    font-weight: 900;
+}
+
+.call h2 {
+    color: white;
+}
+
+.call p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.call button {
+    background-color: #3882F6;
+    padding: 8px 32px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #3882F6;
+    border-radius: 8px;
+}

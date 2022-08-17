@@ -3,48 +3,64 @@ html {
 }
 
 body {
-    border: 6px solid red;
     /* The key for keeping the footer at the end is display: flex with column direction, height: 100vh for extending the container to the end, and using margin-top: auto in the footer for keeping it at the end. */
     height: 100vh;
     display: flex;
     flex-direction: column;
+    /* Setting margin and padding to 0 in the body removes the withe border that background-color didn't cover before */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    border: 3px solid blue;
     background-color: #1F2937;
+    padding-left: 200px;
+    padding-right: 200px;
 }
+
+.content {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.left-side {
+    padding: 50px;
+    padding-left: 0;
+}
+
+.placeholder img {
+    width: 500px;
+    height: 240px;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+}
+
 
 nav {
-    border: 3px solid green;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.section-one {
-    border: 3px solid purple;
-}
-
-.section-two {
-    border: 3px solid yellow;
-}
-
-.call {
-    border: 3px solid orange;
-}
 
 footer {
-    border: 3px solid pink;
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
     margin-top: auto;
+    text-align: center;
+    padding: 35px;
 }
 
 h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 0;
 }
 
 header p, button {
@@ -66,7 +82,8 @@ header button {
     background-color: #3882F6;
     padding: 8px 32px;
     border-style: none;
-    border-radius: 8px
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
 #logo {
@@ -74,30 +91,67 @@ header button {
     color: #F9FAF8;
 }
 
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.squares img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #4e80ef;
+    border-radius: 10px;
+}
+
+.squares {
+    display: flex;
+    gap: 40px;
+}
+
+.item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .section-one h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin-bottom: 40px;
 }
 
 .section-one p {
     font-size: 18px;
     color: #555c69;
+    margin-top: 10px;
 }
 
 .section-two {
     background-color: #E5E7EB;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .section-two blockquote {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
     color: #1F2937;
 }
 
 .section-two figcaption {
     font-weight: 900;
+    text-align: right;
+    margin-right: 90px;
 }
 
 .call h2 {
@@ -117,9 +171,24 @@ header button {
     border-radius: 8px
 }
 
+.call {
+    padding-left: 200px;
+    padding-right: 200px;
+} 
+
 .card {
-    margin: 20px;
-    padding: 20px;
+    padding: 5px;
     background-color: #3882F6;
     border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.card h2, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
